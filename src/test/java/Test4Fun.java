@@ -28,6 +28,9 @@ public class Test4Fun {
         WebElement weclomeMsg=driver.findElement(By.xpath("//body/div[1]/div[1]/a[2]"));
         weclomeMsg.click();
 
+        WebElement aboutBtn=driver.findElement(By.xpath("//div[@id='welcome-menu']/ul/li[1]"));
+        aboutBtn.click();
+
 
     }
 }
