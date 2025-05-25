@@ -29,25 +29,23 @@ public class Test4Fun {
 
         WebDriverWait wait=new WebDriverWait(driver,Duration.ofSeconds(10));
 
-        WebElement weclomeMsg=driver.findElement(By.xpath("//body/div[1]/div[1]/a[2]"));
-        weclomeMsg.click();
+       // WebElement weclomeMsg=driver.findElement(By.xpath("//body/div[1]/div[1]/a[2]"));
+       // weclomeMsg.click();
 
-        WebElement aboutBtn=driver.findElement(By.xpath("//div[@id='welcome-menu']/ul/li[1]"));
-        aboutBtn.click();
+       // WebElement aboutBtn=driver.findElement(By.xpath("//div[@id='welcome-menu']/ul/li[1]"));
+        //aboutBtn.click();
 
 
 
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='welcome-menu']/ul/li[1]/div/div/a")));
-        WebElement closeBtn=driver.findElement(By.xpath("//div[@id='welcome-menu']/ul/li[1]/div/div/a"));
-        closeBtn.click();
+      //  wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='welcome-menu']/ul/li[1]/div/div/a")));
+       // WebElement closeBtn=driver.findElement(By.xpath("//div[@id='welcome-menu']/ul/li[1]/div/div/a"));
+        //closeBtn.click();
 
         WebElement  pimBtn=driver.findElement(By.xpath("//*[@id='menu_pim_viewPimModule']"));
+        pimBtn.click();
 
-        System.out.println("hello");
-
-
-
-
+        WebElement addEmpBtn=driver.findElement(By.xpath("//*[@id='menu_pim_addEmployee']"));
+        addEmpBtn.click();
 
 
 
