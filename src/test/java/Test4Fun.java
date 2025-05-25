@@ -3,6 +3,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.ExpectedCondition;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.time.Duration;
@@ -31,8 +33,15 @@ public class Test4Fun {
         WebElement aboutBtn=driver.findElement(By.xpath("//div[@id='welcome-menu']/ul/li[1]"));
         aboutBtn.click();
 
+
+
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@id='welcome-menu']/ul/li[1]/div/div/a")));
         WebElement closeBtn=driver.findElement(By.xpath("//div[@id='welcome-menu']/ul/li[1]/div/div/a"));
         closeBtn.click();
+
+
+
+
 
 
     }
