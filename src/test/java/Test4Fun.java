@@ -3,6 +3,8 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.interactions.Action;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -40,10 +42,12 @@ public class Test4Fun {
         closeBtn.click();
 
         WebElement  pimBtn=driver.findElement(By.xpath("//*[@id='menu_pim_viewPimModule']"));
-        pimBtn.click();
 
-        WebElement addEmployeeBtn=driver.findElement(By.xpath("//*[@id='menu_pim_addEmployee']"));
-        addEmployeeBtn.click();
+        System.out.println("hello");
+
+
+
+
 
 
 
