@@ -39,6 +39,9 @@ public class Test4Fun {
         WebElement closeBtn=driver.findElement(By.xpath("//div[@id='welcome-menu']/ul/li[1]/div/div/a"));
         closeBtn.click();
 
+        WebElement  pimBtn=driver.findElement(By.xpath("//*[@id='menu_pim_viewPimModule']"));
+        pimBtn.click();
+
 
 
 
