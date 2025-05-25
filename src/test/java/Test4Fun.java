@@ -31,6 +31,9 @@ public class Test4Fun {
         WebElement aboutBtn=driver.findElement(By.xpath("//div[@id='welcome-menu']/ul/li[1]"));
         aboutBtn.click();
 
+        WebElement closeBtn=driver.findElement(By.xpath("//div[@id='welcome-menu']/ul/li[1]/div/div/a"));
+        closeBtn.click();
+
 
     }
 }
