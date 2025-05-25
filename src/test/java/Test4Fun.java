@@ -13,6 +13,9 @@ public class Test4Fun {
         username.sendKeys("Admin");
         WebElement password= driver.findElement(By.xpath("//*[@name='txtPassword']"));
         password.sendKeys("Hum@nhrm123");
+        WebElement loginBtn= driver.findElement(By.xpath("//*[@id='btnLogin']"));
+        loginBtn.click();
+
 
     }
 }
