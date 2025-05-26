@@ -50,6 +50,16 @@ public class Test4Fun {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='menu_pim_addEmployee']")));
         addEmpBtn.click();
 
+        WebElement addFN=driver.findElement(By.xpath("//input[@name='firstName']"));
+        addFN.sendKeys("James");
+        WebElement addMdN=driver.findElement(By.xpath("//input[@name='middleName']"));
+        addMdN.sendKeys("007");
+        WebElement addLN=driver.findElement(By.xpath("//input[@name='lastName']"));
+        addLN.sendKeys("Bond");
+
+        WebElement saveBtn=driver.findElement(By.xpath("//input[@value='Save']"));
+        saveBtn.click();
+
 
 
 
