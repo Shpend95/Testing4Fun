@@ -44,8 +44,12 @@ public class Test4Fun {
         WebElement  pimBtn=driver.findElement(By.xpath("//*[@id='menu_pim_viewPimModule']"));
         pimBtn.click();
 
+
+
         WebElement addEmpBtn=driver.findElement(By.xpath("//*[@id='menu_pim_addEmployee']"));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//*[@id='menu_pim_addEmployee']")));
         addEmpBtn.click();
+
 
 
 
